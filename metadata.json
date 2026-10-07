@@ -1,0 +1,6 @@
+{
+  "name": "VS Bricks Supply | Premium Red Bricks at ₹9/Brick",
+  "description": "VS Bricks Supply - Supplier of premium quality PVC, RBS, and VBS red clay bricks across Telangana at ₹9 per brick. Stronger Walls, Brighter Futures.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

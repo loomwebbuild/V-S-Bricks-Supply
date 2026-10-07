@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-oswald: var(--font-oswald), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-jakarta: var(--font-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: var(--font-mono), monospace;
+  }
+}
+
+.font-display {
+  font-family: var(--font-oswald), sans-serif;
+}
+
+.font-sans {
+  font-family: var(--font-jakarta), sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #181614;
+}
+::-webkit-scrollbar-thumb {
+  background: #B83824;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d44a32;
+}
+
+/* Bobbing animation for scroll indicator */
+@keyframes bobbing {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.animate-bobbing {
+  animation: bobbing 2s ease-in-out infinite;
+}
+
+/* Text balance helper */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Brick texture subtle overlay */
+.brick-grid-pattern {
+  background-image: linear-gradient(to right, rgba(184, 56, 36, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(184, 56, 36, 0.05) 1px, transparent 1px);
+  background-size: 40px 20px;
+}
+
+.dark-brick-pattern {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 48px 24px;
+}
